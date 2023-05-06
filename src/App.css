@@ -1,38 +1,117 @@
 .App {
   text-align: center;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btn {
+  box-sizing: border-box;
+  appearance: none;
+  background-color: black;
+  border: 3px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  font-size: 16px;
+  padding: 15px 40px;
+  text-decoration: none;
+  text-align: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-transform: uppercase;
+  font-family: Century Gothic;
+  font-weight: 700;
+  color: aquamarine;
+  min-width: 180px;
+}
+.btn:hover {
+    text-decoration: none;
+    transition: all .8s;
+    font-weight: bolder;
+    border: 3px solid black;
+    color: black;
+    background-color: aquamarine;
+}
+.btn:active {
+  background-color: lime;
+  border-radius: 15px;
+}
+
+.postCart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1E1F1C;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.postCartTitle {
+  font-family:  futura;
+  color: lime;
+  font-size: 50px;
+}
+.postCartText {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.lime{
+  color: lime;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.m_b{
+  margin-bottom: 20px;
 }
+
+.todo_card{
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
+
+.wrap {
+  margin-bottom: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-items: center; */
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.input{
+  padding: 10px 15px;
+  width: 50%;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.block{
+  width: 30%;
+  padding: 25px;
+  background-color: aquamarine;
+  box-sizing: border-box;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  min-height: 500px;
+  min-width: 340px;
+  margin: 20px;
+}
+
+.user_current{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
