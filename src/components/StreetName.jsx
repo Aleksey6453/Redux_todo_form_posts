@@ -1,9 +1,11 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 
 const StreetName = () => {
+  const streetName = useSelector((state)=>state.user.streetName)
   return (
     <div>
-      <b>Street Name !</b>
+      <b>{streetName}</b>
     </div>
   )
 }
