@@ -3,8 +3,10 @@ import User from './components/User'
 import Form from './components/Form'
 import TodoItem from './components/TodoItem'
 import Posts from './components/Posts'
+import { useSelector } from 'react-redux'
 
 function App() {
+  const todos = useSelector((state) => state.todo.todos)
   return (
     <div className="App">
       <div className="wrap">
@@ -15,7 +17,16 @@ function App() {
         <div className="block">
           <h1>Todo</h1>
           <Form />
-          <TodoItem />
+          {/* <TodoItem /> */}
+
+          {
+            todos.map((todo)=>{
+              <TodoItem
+                key={todo.id} 
+                todo={todo}
+              />
+            })
+          }
         </div>
         <div className="block">
           <h1>Posts</h1>

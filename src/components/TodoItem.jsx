@@ -1,6 +1,6 @@
 import React from 'react'
 
-const TodoItem = () => {
+const TodoItem = ({todo}) => {
     const completed = false
   return (
     <div className='user_current'>
@@ -11,7 +11,7 @@ const TodoItem = () => {
       </div>
       <div>
         <b>
-          Todo Text
+          {todo.text}
         </b>
       </div>
       <div>
